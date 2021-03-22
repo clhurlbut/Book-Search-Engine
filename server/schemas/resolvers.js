@@ -7,9 +7,10 @@ const resolvers = {
         me: async (parent, args, context) => {
             if (context.user) {
                 const userData = await User.findOne({ _id: context.user._id }).select('-__v -password');
+
                 return userData;
             }
-            throw new AuthenticationError('You are not logged in!');
+            throw new AuthenticationError('Not Logged in');
         }
     },
     Mutation: {
@@ -21,14 +22,12 @@ const resolvers = {
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
             if (!user) {
-                throw new AuthenticationError('Wrong login info! Try again.')
+                throw new Authentication('Incorrect login!')
             }
             const correctPw = await user.isCorrectPassword(password);
-
             if (!correctPw) {
-                throw new AuthenticationError('Incorrect credentials');
+                throw new AuthenticationError('Incorrect login!');
             }
-
             const token = signToken(user);
             return { token, user };
         },
