@@ -1,39 +1,43 @@
-## React-Portfolio
+## ✨ React-Portfolio
 A Google Book Search App refactored to use MERN and GraphQL!
 
-## User Story 
+## 🛎️ User Story 
 ```
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
+AS AN avid reader
+I WANT to search for new books to read
+SO THAT I can keep a list of books to purchase
 ```
-## Acceptance Criteria
+## 📃 Acceptance Criteria
 ```
-GIVEN a single-page application portfolio for a web developer
-WHEN I load the portfolio
-THEN I am presented with a page containing a header, a section for content, and a footer
-WHEN I view the header
-THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
-WHEN I view the navigation titles
-THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
-WHEN I click on a navigation title
-THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
-WHEN I load the portfolio the first time
-THEN the About Me title and section are selected by default
-WHEN I am presented with the About Me section
-THEN I see a recent photo of the developer and a short bio about them
-WHEN I am presented with the Portfolio section
-THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
-WHEN I am presented with the Contact section
-THEN I see a contact form with fields for a name, an email address, and a message
-WHEN I move my cursor out of one of the form fields without entering text
-THEN I receive a notification that this field is required
-WHEN I enter text into the email address field
-THEN I receive a notification if I have entered an invalid email address
-WHEN I am presented with the Resume section
-THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
-WHEN I view the footer
-THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) 
+GIVEN a book search engine
+WHEN I load the search engine
+THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
+WHEN I click on the Search for Books menu option
+THEN I am presented with an input field to search for books and a submit button
+WHEN I am not logged in and enter a search term in the input field and click the submit button
+THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
+WHEN I click on the Login/Signup menu option
+THEN a modal appears on the screen with a toggle between the option to log in or sign up
+WHEN the toggle is set to Signup
+THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
+WHEN the toggle is set to Login
+THEN I am presented with two inputs for an email address and a password and login button
+WHEN I enter a valid email address and create a password and click on the signup button
+THEN my user account is created and I am logged in to the site
+WHEN I enter my account’s email address and password and click on the login button
+THEN I the modal closes and I am logged in to the site
+WHEN I am logged in to the site
+THEN the menu options change to Search for Books, an option to see my saved books, and Logout
+WHEN I am logged in and enter a search term in the input field and click the submit button
+THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
+WHEN I click on the Save button on a book
+THEN that book’s information is saved to my account
+WHEN I click on the option to see my saved books
+THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
+WHEN I click on the Remove button on a book
+THEN that book is deleted from my saved books list
+WHEN I click on the Logout button
+THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
 ```
 
   ## 💽 Installation
