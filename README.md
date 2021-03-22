@@ -1,4 +1,4 @@
-## ✨ React-Portfolio
+## ✨ Google Powered Book Search Engine
 A Google Book Search App refactored to use MERN and GraphQL!
 
 ## 🛎️ User Story 
