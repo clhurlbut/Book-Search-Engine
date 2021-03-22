@@ -1,7 +1,10 @@
 {
   "name": "googlebooks-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A super neat app to find and save books",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "server/server.js",
   "scripts": {
     "dev": "react-scripts start",
