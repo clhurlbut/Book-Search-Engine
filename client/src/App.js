@@ -5,11 +5,11 @@ import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 import { ApolloProvider } from '@apollo/client';
 import ApolloClient from 'apollo-boost';
-
+import Auth from './utils/auth';
 
 const client = new ApolloClient({
   request: operation => {
-    const token = localStorage.getItem('id_token')
+    const token = Auth.getToken();
     operation.setContext({
       headers: {
         authorization: token ? `Bearer ${token}` : ''
