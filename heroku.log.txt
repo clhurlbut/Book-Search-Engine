@@ -1,0 +1,101 @@
+2021-03-23T06:14:10.075939+00:00 app[web.1]: at Object.<anonymous> (/app/server/server.js:7:12)
+2021-03-23T06:14:10.075940+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2021-03-23T06:14:10.075940+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2021-03-23T06:14:10.075940+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:928:32)
+2021-03-23T06:14:10.075941+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-03-23T06:14:10.075941+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+2021-03-23T06:14:10.076031+00:00 app[web.1]: (node:52) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+2021-03-23T06:14:10.087481+00:00 app[web.1]: (node:52) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2021-03-23T06:14:10.304170+00:00 heroku[web.1]: Process exited with status 0
+2021-03-23T06:14:10.398509+00:00 heroku[web.1]: State changed from starting to crashed
+2021-03-23T12:05:49.713577+00:00 heroku[web.1]: State changed from crashed to starting
+2021-03-23T12:06:15.007521+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-03-23T12:06:19.483958+00:00 app[web.1]: 
+2021-03-23T12:06:19.484012+00:00 app[web.1]: > googlebooks-app@1.0.0 start /app
+2021-03-23T12:06:19.484012+00:00 app[web.1]: > if-env NODE_ENV=production && npm run start:prod || npm run start:dev
+2021-03-23T12:06:19.484013+00:00 app[web.1]: 
+2021-03-23T12:06:21.664378+00:00 app[web.1]: 
+2021-03-23T12:06:21.664421+00:00 app[web.1]: > googlebooks-app@1.0.0 start:prod /app
+2021-03-23T12:06:21.664422+00:00 app[web.1]: > cd server && npm start
+2021-03-23T12:06:21.664422+00:00 app[web.1]: 
+2021-03-23T12:06:22.589672+00:00 app[web.1]: 
+2021-03-23T12:06:22.589691+00:00 app[web.1]: > server@1.0.0 start /app/server
+2021-03-23T12:06:22.589692+00:00 app[web.1]: > node server.js
+2021-03-23T12:06:22.589693+00:00 app[web.1]: 
+2021-03-23T12:06:25.667643+00:00 app[web.1]: (node:52) Warning: Accessing non-existent property 'count' of module exports inside circular dependency
+2021-03-23T12:06:25.667658+00:00 app[web.1]: (Use `node --trace-warnings ...` to show where the warning was created)
+2021-03-23T12:06:25.669243+00:00 app[web.1]: (node:52) Warning: Accessing non-existent property 'findOne' of module exports inside circular dependency
+2021-03-23T12:06:25.669861+00:00 app[web.1]: (node:52) Warning: Accessing non-existent property 'remove' of module exports inside circular dependency
+2021-03-23T12:06:25.670124+00:00 app[web.1]: (node:52) Warning: Accessing non-existent property 'updateOne' of module exports inside circular dependency
+2021-03-23T12:06:55.843967+00:00 app[web.1]: (node:52) UnhandledPromiseRejectionWarning: MongooseServerSelectionError: bad auth : Authentication failed.
+2021-03-23T12:06:55.844000+00:00 app[web.1]: at new MongooseServerSelectionError (/app/server/node_modules/mongoose/lib/error/serverSelection.js:22:11)
+2021-03-23T12:06:55.844000+00:00 app[web.1]: at NativeConnection.Connection.openUri (/app/server/node_modules/mongoose/lib/connection.js:823:32)
+2021-03-23T12:06:55.844002+00:00 app[web.1]: at Mongoose.connect (/app/server/node_modules/mongoose/lib/index.js:333:15)
+2021-03-23T12:06:55.844003+00:00 app[web.1]: at Object.<anonymous> (/app/server/config/connection.js:3:10)
+2021-03-23T12:06:55.844004+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2021-03-23T12:06:55.844004+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2021-03-23T12:06:55.844005+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:928:32)
+2021-03-23T12:06:55.844005+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-03-23T12:06:55.844006+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-03-23T12:06:55.844006+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:88:18)
+2021-03-23T12:06:55.844006+00:00 app[web.1]: at Object.<anonymous> (/app/server/server.js:7:12)
+2021-03-23T12:06:55.844007+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2021-03-23T12:06:55.844007+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2021-03-23T12:06:55.844008+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:928:32)
+2021-03-23T12:06:55.844008+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-03-23T12:06:55.844009+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+2021-03-23T12:06:55.845307+00:00 app[web.1]: (node:52) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+2021-03-23T12:06:55.845645+00:00 app[web.1]: (node:52) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2021-03-23T12:06:56.039272+00:00 heroku[web.1]: Process exited with status 0
+2021-03-23T12:06:56.115540+00:00 heroku[web.1]: State changed from starting to crashed
+2021-03-23T17:56:27.754031+00:00 heroku[web.1]: State changed from crashed to starting
+2021-03-23T17:56:54.347372+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-03-23T17:56:58.829590+00:00 app[web.1]: 
+2021-03-23T17:56:58.829608+00:00 app[web.1]: > googlebooks-app@1.0.0 start /app
+2021-03-23T17:56:58.829609+00:00 app[web.1]: > if-env NODE_ENV=production && npm run start:prod || npm run start:dev
+2021-03-23T17:56:58.829610+00:00 app[web.1]: 
+2021-03-23T17:57:00.585994+00:00 app[web.1]: 
+2021-03-23T17:57:00.586046+00:00 app[web.1]: > googlebooks-app@1.0.0 start:prod /app
+2021-03-23T17:57:00.586048+00:00 app[web.1]: > cd server && npm start
+2021-03-23T17:57:00.586048+00:00 app[web.1]: 
+2021-03-23T17:57:01.958280+00:00 app[web.1]: 
+2021-03-23T17:57:01.958295+00:00 app[web.1]: > server@1.0.0 start /app/server
+2021-03-23T17:57:01.958296+00:00 app[web.1]: > node server.js
+2021-03-23T17:57:01.958296+00:00 app[web.1]: 
+2021-03-23T17:57:04.913913+00:00 app[web.1]: (node:52) Warning: Accessing non-existent property 'count' of module exports inside circular dependency
+2021-03-23T17:57:04.913925+00:00 app[web.1]: (Use `node --trace-warnings ...` to show where the warning was created)
+2021-03-23T17:57:04.916432+00:00 app[web.1]: (node:52) Warning: Accessing non-existent property 'findOne' of module exports inside circular dependency
+2021-03-23T17:57:04.916658+00:00 app[web.1]: (node:52) Warning: Accessing non-existent property 'remove' of module exports inside circular dependency
+2021-03-23T17:57:04.916889+00:00 app[web.1]: (node:52) Warning: Accessing non-existent property 'updateOne' of module exports inside circular dependency
+2021-03-23T17:57:35.082244+00:00 app[web.1]: (node:52) UnhandledPromiseRejectionWarning: MongooseServerSelectionError: bad auth : Authentication failed.
+2021-03-23T17:57:35.082259+00:00 app[web.1]: at new MongooseServerSelectionError (/app/server/node_modules/mongoose/lib/error/serverSelection.js:22:11)
+2021-03-23T17:57:35.082259+00:00 app[web.1]: at NativeConnection.Connection.openUri (/app/server/node_modules/mongoose/lib/connection.js:823:32)
+2021-03-23T17:57:35.082260+00:00 app[web.1]: at Mongoose.connect (/app/server/node_modules/mongoose/lib/index.js:333:15)
+2021-03-23T17:57:35.082261+00:00 app[web.1]: at Object.<anonymous> (/app/server/config/connection.js:3:10)
+2021-03-23T17:57:35.082262+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2021-03-23T17:57:35.082262+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2021-03-23T17:57:35.082263+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:928:32)
+2021-03-23T17:57:35.082263+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-03-23T17:57:35.082263+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:952:19)
+2021-03-23T17:57:35.082264+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:88:18)
+2021-03-23T17:57:35.082264+00:00 app[web.1]: at Object.<anonymous> (/app/server/server.js:7:12)
+2021-03-23T17:57:35.082265+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2021-03-23T17:57:35.082265+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2021-03-23T17:57:35.082266+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:928:32)
+2021-03-23T17:57:35.082266+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+2021-03-23T17:57:35.082267+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+2021-03-23T17:57:35.086557+00:00 app[web.1]: (node:52) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+2021-03-23T17:57:35.086711+00:00 app[web.1]: (node:52) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2021-03-23T17:57:35.295322+00:00 heroku[web.1]: Process exited with status 0
+2021-03-23T17:57:35.364389+00:00 heroku[web.1]: State changed from starting to crashed
+2021-03-23T18:15:44.995824+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=limitless-basin-22585.herokuapp.com request_id=aa10de67-87b0-4429-b579-b3632e5a8361 fwd="75.85.160.18" dyno= connect= service= status=503 bytes= protocol=https
+2021-03-23T18:15:45.835460+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=limitless-basin-22585.herokuapp.com request_id=c49b64ca-6f9e-4a0f-b3fa-bcb37041e625 fwd="75.85.160.18" dyno= connect= service= status=503 bytes= protocol=https
+2021-03-23T18:21:08.092562+00:00 app[api]: Starting process with command `bash` by user clhurlbut@gmail.com
+2021-03-23T18:21:28.312632+00:00 heroku[run.5519]: State changed from starting to up
+2021-03-23T18:21:28.680863+00:00 heroku[run.5519]: Awaiting client
+2021-03-23T18:21:28.711251+00:00 heroku[run.5519]: Starting process with command `bash`
+2021-03-23T18:23:30.876508+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=limitless-basin-22585.herokuapp.com request_id=1934f7ff-2b35-4a86-9d9f-1503d71cb6da fwd="75.85.160.18" dyno= connect= service= status=503 bytes= protocol=https
+2021-03-23T18:23:31.428423+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=limitless-basin-22585.herokuapp.com request_id=0a2f6c78-bc68-470d-92d7-b11551589fad fwd="75.85.160.18" dyno= connect= service= status=503 bytes= protocol=https
+2021-03-23T18:23:36.011759+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=limitless-basin-22585.herokuapp.com request_id=f5ae7623-c430-4f04-82f1-6a9de3b55538 fwd="75.85.160.18" dyno= connect= service= status=503 bytes= protocol=https
+2021-03-23T18:23:36.514249+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=limitless-basin-22585.herokuapp.com request_id=438c2e9f-ede3-440f-ae9c-43249e20669a fwd="75.85.160.18" dyno= connect= service= status=503 bytes= protocol=https
+Terminate batch job (Y/N)? 
